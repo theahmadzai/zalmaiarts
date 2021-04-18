@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ureed',
+    title: 'Zalmai Arts',
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-source-contentful",
-    //   options: {
-    //     accessToken: "",
-    //     spaceId: "",
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: '8n6qbi9n0qqs',
+      },
+    },
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
