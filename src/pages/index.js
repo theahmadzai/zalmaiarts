@@ -8,7 +8,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      {paintings.map((painting) => (
+      {paintings.map(painting => (
         <Link to={`/paintings/${painting.slug}`} key={painting.slug}>
           <p>{painting.title}</p>
         </Link>

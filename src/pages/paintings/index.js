@@ -10,7 +10,7 @@ export default function PaintingsPage() {
   return (
     <Layout>
       <div className="grid grid-cols-3 gap-x-2 gap-y-1 sm:gap-4 md:gap-6 lg:gap-8">
-        {paintings.map((painting) => (
+        {paintings.map(painting => (
           <Link to={`/paintings/${painting.slug}`} key={painting.slug}>
             <div className="rotate-12">
               <GatsbyImage

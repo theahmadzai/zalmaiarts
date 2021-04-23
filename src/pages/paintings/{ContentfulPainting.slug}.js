@@ -21,7 +21,7 @@ export default function PaintingPage({ data: { painting } }) {
   return (
     <Layout>
       <h1>{painting.title}</h1>
-      {painting.images.map((image) => (
+      {painting.images.map(image => (
         <GatsbyImage
           key={image.title}
           image={image.gatsbyImageData}
