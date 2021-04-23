@@ -1,11 +1,19 @@
 import * as React from 'react'
-import Logo from '../components/logo'
+import { Link } from 'gatsby'
+import usePaintings from '../hooks/use-paintings'
+import Layout from '../components/layout'
 
 const IndexPage = () => {
+  const paintings = usePaintings()
+
   return (
-    <main>
-      <Logo />
-    </main>
+    <Layout>
+      {paintings.map((painting) => (
+        <Link to={`/paintings/${painting.slug}`} key={painting.slug}>
+          <p>{painting.title}</p>
+        </Link>
+      ))}
+    </Layout>
   )
 }
 

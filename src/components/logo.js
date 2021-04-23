@@ -3,7 +3,7 @@ import React from 'react'
 export default function Logo() {
   return (
     <svg
-      style={{ background: '0 0' }}
+      style={{ background: '0 0', width: '128px' }}
       preserveAspectRatio="xMidYMid"
       viewBox="115.964 10.982 268.073 128.035"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,9 @@
+require('dotenv').config({ path: '.env' })
+
 module.exports = {
   siteMetadata: {
     title: 'Zalmai Arts',
+    description: 'Zalmai Arts',
   },
   plugins: [
     {
