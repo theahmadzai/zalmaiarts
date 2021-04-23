@@ -5,7 +5,7 @@ export default function Logo() {
     <svg
       style={{ background: '0 0', width: '128px' }}
       preserveAspectRatio="xMidYMid"
-      viewBox="115.964 10.982 268.073 128.035"
+      viewBox="160 10 270 130"
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs />
